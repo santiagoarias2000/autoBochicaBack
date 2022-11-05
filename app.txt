@@ -1,0 +1,48 @@
+###################################333
+#creacion de bakend en consola
+npm init ----> inicial programa
+npm start ----> iniciar backend
+
+#instalacion de librerias
+npm i cors
+npm i morgan
+npm i express
+npm i mongoose
+npm i bcryptjs
+npm i jsonwebtoken
+
+#instalacion de librerias que no son necesarias
+npm i dotenv --save-dev 
+npm i nodemon --save-dev
+npm i @types/cors  --save-dev   
+npm i @types/morgan --save-dev
+npm i @types/express --save-dev
+npm i @types/jsonwebtoken --save-dev
+
+#iniciar Type Script toca desde consola
+tsc --init
+
+powerShell para quitar el error de consola por tsc 
+get-executionpolicy
+set-executionpolicy unrestricted
+
+#Scripts para ejecutar el codigo backend--- esto va en package.json
+        "build": "tsc -w",
+        "dev": "nodemon build/index.js"
+
+#organizar carpetas
+src
+	config
+	controller
+	dao
+	entity
+	middleware
+	routes
+	schemes
+
+#corre el programa 
+-en una terminal llamada build
+npm run build
+-en una terminal llamada dev
+npm run dev
+#comenzar
