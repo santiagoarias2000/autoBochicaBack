@@ -2,6 +2,11 @@ import cors from "cors";
 import morgan from "morgan";
 import express from "express";
 import AdminRoutes from "../../routes/AdminRoutes";
+import StratumRoutes from "../../routes/StratumRoutes";
+import SisbenRoutes from "../../routes/SisbenRoutes";
+import CivilStatusroutes from "../../routes/CivilStatusroutes";
+import EducationLevelRoutes from "../../routes/EducationLevelRoutes";
+import cityRoutes from "../../routes/cityRoutes";
 
 class Server {
   public app: express.Application;
@@ -22,6 +27,11 @@ class Server {
 
   public activeRoute(): void {
     this.app.use('/api/admin', AdminRoutes);
+    this.app.use('/api/stratum', StratumRoutes);
+    this.app.use('/api/sisben', SisbenRoutes);
+    this.app.use('/api/civilstatus', CivilStatusroutes);
+    this.app.use('/api/educationlevel', EducationLevelRoutes);
+    this.app.use('/api/city', cityRoutes);
   }
 
   public start(): void {
