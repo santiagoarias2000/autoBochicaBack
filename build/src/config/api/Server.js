@@ -12,6 +12,10 @@ const SisbenRoutes_1 = __importDefault(require("../../routes/SisbenRoutes"));
 const CivilStatusroutes_1 = __importDefault(require("../../routes/CivilStatusroutes"));
 const EducationLevelRoutes_1 = __importDefault(require("../../routes/EducationLevelRoutes"));
 const cityRoutes_1 = __importDefault(require("../../routes/cityRoutes"));
+const TypeDocumentRoutes_1 = __importDefault(require("../../routes/TypeDocumentRoutes"));
+const TypeGenderRoutes_1 = __importDefault(require("../../routes/TypeGenderRoutes"));
+const TypeSanguinRoutes_1 = __importDefault(require("../../routes/TypeSanguinRoutes"));
+const OtherDataPersonRoutes_1 = __importDefault(require("../../routes/OtherDataPersonRoutes"));
 class Server {
     constructor() {
         this.app = (0, express_1.default)();
@@ -32,6 +36,10 @@ class Server {
         this.app.use('/api/civilstatus', CivilStatusroutes_1.default);
         this.app.use('/api/educationlevel', EducationLevelRoutes_1.default);
         this.app.use('/api/city', cityRoutes_1.default);
+        this.app.use('/api/typedocument', TypeDocumentRoutes_1.default);
+        this.app.use('/api/typegender', TypeGenderRoutes_1.default);
+        this.app.use('/api/typesanguineos', TypeSanguinRoutes_1.default);
+        this.app.use('/api/otherdataperson', OtherDataPersonRoutes_1.default);
     }
     start() {
         this.app.listen(this.app.get("PORT"), () => {

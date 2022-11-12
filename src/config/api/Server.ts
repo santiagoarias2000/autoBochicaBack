@@ -7,6 +7,10 @@ import SisbenRoutes from "../../routes/SisbenRoutes";
 import CivilStatusroutes from "../../routes/CivilStatusroutes";
 import EducationLevelRoutes from "../../routes/EducationLevelRoutes";
 import cityRoutes from "../../routes/cityRoutes";
+import TypeDocumentRoutes from "../../routes/TypeDocumentRoutes";
+import TypeGenderRoutes from "../../routes/TypeGenderRoutes";
+import TypeSanguinRoutes from "../../routes/TypeSanguinRoutes";
+import OtherDataPersonRoutes from "../../routes/OtherDataPersonRoutes";
 
 class Server {
   public app: express.Application;
@@ -32,6 +36,10 @@ class Server {
     this.app.use('/api/civilstatus', CivilStatusroutes);
     this.app.use('/api/educationlevel', EducationLevelRoutes);
     this.app.use('/api/city', cityRoutes);
+    this.app.use('/api/typedocument', TypeDocumentRoutes);
+    this.app.use('/api/typegender', TypeGenderRoutes);
+    this.app.use('/api/typesanguineos', TypeSanguinRoutes);
+    this.app.use('/api/otherdataperson', OtherDataPersonRoutes);
   }
 
   public start(): void {
