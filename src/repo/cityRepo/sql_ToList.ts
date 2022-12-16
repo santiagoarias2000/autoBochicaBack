@@ -1,3 +1,3 @@
 export const SQL_CITY_VIEW = {
-    VIEW: 'Select name_city as City from citys',
+    VIEW: 'Select id_city, name_city from citys',
 }

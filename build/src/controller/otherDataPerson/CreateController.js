@@ -4,8 +4,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const sql_create_1 = require("./../../repo/otherDataPersonRepo/sql_create");
-const create_1 = __importDefault(require("../../dao/otherDataPerson/create"));
-class OtherDataPersonControllerCreate extends create_1.default {
+const Create_1 = __importDefault(require("../../dao/otherDataPerson/Create"));
+class OtherDataPersonControllerCreate extends Create_1.default {
     createMeOtherData(req, res) {
         const direction = req.body.direction;
         const phone_number = req.body.phoneNumber;

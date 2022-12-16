@@ -1,4 +1,4 @@
 export const SQL_TYPESANGU_VIEW = {
-  VIEW: 'select types_sanguineous."type" as "Tipo", rh as "Rh" \
+  VIEW: 'select types_sanguineous."type", rh  \
    from types_sanguineous',
 };

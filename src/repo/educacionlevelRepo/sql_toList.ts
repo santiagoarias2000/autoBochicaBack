@@ -1,3 +1,3 @@
 export const SQL_EDUCLEVEL_VIEW = {
-    VIEW:'select name_education_level as "Nivel de educacion" from educations_levels;'
+    VIEW:'select id_education_level, name_education_level from educations_levels;'
 }

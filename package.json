@@ -8,7 +8,7 @@
         "build": "tsc -w",
         "dev": "nodemon build/index.js"
     },
-    "author": "Santiago Arias/Fabian Niño",
+    "author": "Santiago Arias/Fabian Niño by Hit Data",
     "license": "ISC",
     "dependencies": {
         "bcryptjs": "^2.4.3",
