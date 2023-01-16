@@ -23,7 +23,7 @@ class VehicleDelete {
             })
                 .catch((miError) => {
                 console.log(miError);
-                return res.status(400).json({ answer: 'Error to delete from AuthorDetele.ts' });
+                return res.status(400).json({ answer: 'Error to delete from VehiclesDelete.ts' });
             });
         });
     }

@@ -7,7 +7,7 @@ npm start ----> iniciar backend
 npm i cors
 npm i morgan
 npm i express
-npm i mongoose
+npm i pg-promise
 npm i bcryptjs
 npm i jsonwebtoken
 
@@ -30,15 +30,29 @@ set-executionpolicy unrestricted
         "build": "tsc -w",
         "dev": "nodemon build/index.js"
 
+//****************************************
+en el tsconfig.json asegurarse de 
+"targe": "es2016"
+"ourDir": "./build"
+linea 50
+
 #organizar carpetas
 src
-	config
-	controller
-	dao
-	entity
-	middleware
-	routes
-	schemes
+    configuracion
+	api
+		server
+	connection
+		connectionDB
+		funtionConnection
+		optionConnection
+	domains 
+		var_database
+    controladores
+    daos
+    middleaware
+    modelos
+    repositorios
+    rutas
 
 #corre el programa 
 -en una terminal llamada build

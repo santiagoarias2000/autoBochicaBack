@@ -18,7 +18,7 @@ class VehiclesRoutes {
         this.routesApiVehicles.get("/view", ToListController_1.default.getMeVehicles);
         this.routesApiVehicles.post("/create", CreateController_1.default.createMeVehicle);
         this.routesApiVehicles.get("/details/:idVehicle", DetailsController_1.default.DetailsOne);
-        this.routesApiVehicles.delete("/delete/:idVehicle", DeleteContoller_1.default.deleteCustomer);
+        this.routesApiVehicles.delete("/delete/:idVehicle", DeleteContoller_1.default.deleteVehicles);
         this.routesApiVehicles.put("/update", UpdateController_1.default.updateVehicle);
     }
 }

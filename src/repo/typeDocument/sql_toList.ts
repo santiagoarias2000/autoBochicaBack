@@ -1,3 +1,3 @@
 export const SQL_TYPEDOCUMEN_VIEW ={
- VIEW: 'select type_document  from types_documents;',
+ VIEW: 'select id_type_document, type_document  from types_documents;',
 }

@@ -15,7 +15,7 @@ class VehiclesRoutes{
         this.routesApiVehicles.get("/view", vehicleControllerGet.getMeVehicles);
         this.routesApiVehicles.post( "/create", vehiclesControllerCreate.createMeVehicle );
         this.routesApiVehicles.get( "/details/:idVehicle", vehicleControllerDetails.DetailsOne );
-        this.routesApiVehicles.delete( "/delete/:idVehicle", vehicleControllerDelete.deleteCustomer );
+        this.routesApiVehicles.delete( "/delete/:idVehicle", vehicleControllerDelete.deleteVehicles );
         this.routesApiVehicles.put( "/update", vehicleControllerUpdate.updateVehicle );
     }
 

@@ -9,7 +9,7 @@ class VehicleUpdate {
         })
             .then((respuesta) => {
                 console.log(respuesta);
-                res.status(200).json({ respuesta: 'Update data from vehicle', });
+                res.status(200).json({ respuesta: 'Update data from vehicle' });
             })
             .catch((miError) => {
                 console.log(miError);
